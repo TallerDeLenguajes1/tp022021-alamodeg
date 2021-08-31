@@ -25,6 +25,17 @@ namespace TP_2.Controllers
             return View();
         }
 
+        public IActionResult CargaEmpleado()
+        {
+            _logger.LogInformation("Hola, soy el controller del empleado!");
+            return View();
+        }
+
+        public string MostrarEmpleado(string nombre, string apellido, int dni, int ingreso)
+        {
+            return $"{nombre}";
+        }
+
         public IActionResult Privacy()
         {
             return View();
