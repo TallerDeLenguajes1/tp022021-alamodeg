@@ -6,23 +6,22 @@
 <h1>Alta de Empleado</h1>
 <br>
 <form asp-action="MostrarEmpleado" method="post">
-    <label for="nombre">Ingrese Nombre</label>
-    <input type="text" name="nombre" placeholder="Nombre"/>
-    <br>
-    <label for="apellido">Ingrese Apellido</label>
-    <input type="text" name="apellido" placeholder="Apellido" />
-    
-    <br>
+    <div class="form-row">
+        <label for="nombre">Ingrese Nombre</label>
+        <input type="text" name="nombre" placeholder="Nombre" required="required" />
+        <label for="apellido">Ingrese Apellido</label>
+        <input type="text" name="apellido" placeholder="Apellido" required="required" />
+    </div>
     <label for="email">Ingrese e-mail</label>
-    <input type="email" name="email" placeholder="example@gmail.com" />
+    <input type="email" name="email" placeholder="example@gmail.com" required="required" />
     <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su e-mail con otros sitios.</small>
     <br>
     <label for="dni">Ingrese DNI</label>
-    <input type="text" name="dni" placeholder="36.845.325" />
+    <input type="text" name="dni" placeholder="36.845.325" required="required" maxlength="8" />
     <br>
     <label for="ingreso">Ingrese año de ingreso</label>
-    <input type="text" name="ingreso" placeholder="1968" />
+    <input type="text" name="ingreso" placeholder="1968" maxlength="4" required="required" />
     <br>
-    <input type="submit" class="btn btn-primary" />
+    <input type="submit" class="btn btn-primary" value="Enviar"/>
 </form>
 
